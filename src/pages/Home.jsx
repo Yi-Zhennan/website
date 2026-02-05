@@ -170,7 +170,6 @@ const Home = () => {
             <section id="about" style={{ marginBottom: '6rem' }}>
                 <div style={{
                     display: 'grid',
-                    gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
                     gap: '2rem',
                     // On larger screens, give research more width
                     gridTemplateColumns: 'minmax(320px, 1.3fr) minmax(280px, 1.1fr) minmax(280px, 0.6fr)'
