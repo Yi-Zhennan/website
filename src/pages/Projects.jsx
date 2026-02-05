@@ -6,7 +6,7 @@ import projectData from '../data/projects.json';
 const Projects = () => {
     return (
         <div className="projects-archive">
-            <div style={{ marginBottom: '2rem' }}>
+            <div style={{ marginBottom: '2rem', marginTop: '2rem' }}>
                 <Link to="/#projects" style={{ textDecoration: 'none', color: 'var(--ink-color)', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
                     <span>&larr;</span> Back to Home
                 </Link>

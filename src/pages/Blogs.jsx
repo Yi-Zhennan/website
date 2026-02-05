@@ -5,7 +5,7 @@ import blogData from '../data/blogs.json';
 const Blogs = () => {
     return (
         <div className="blogs-archive">
-            <div style={{ marginBottom: '2rem' }}>
+            <div style={{ marginBottom: '2rem', marginTop: '2rem' }}>
                 <Link to="/#blogs" style={{ color: 'var(--ink-color)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
                     <span>&larr;</span> Back Home
                 </Link>

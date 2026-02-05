@@ -16,7 +16,7 @@ const BlogDetail = () => {
 
     return (
         <div className="blog-detail-page">
-            <div style={{ marginBottom: '2rem' }}>
+            <div style={{ marginBottom: '2rem', marginTop: '2rem' }}>
                 <Link to="/blogs" style={{ textDecoration: 'none', color: 'var(--ink-color)', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
                     <span>&larr;</span> Back to Blogs
                 </Link>

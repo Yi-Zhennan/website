@@ -31,6 +31,7 @@ const Home = () => {
                 gridTemplateColumns: '1.9fr 1fr',
                 gap: '4rem',
                 marginBottom: '5rem',
+                marginTop: '2rem',
                 alignItems: 'center'
             }}>
                 <div style={{ position: 'relative' }}>
