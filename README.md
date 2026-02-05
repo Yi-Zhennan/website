@@ -27,6 +27,25 @@ Build the project for production:
 npm run build
 ```
 
+## 🌐 Deployment
+
+The easiest way to deploy this website is using **Vercel** with **GitHub**.
+
+### 1. Push to GitHub
+1. Create a new repository on [GitHub](https://github.com/new).
+2. Push your local code:
+   ```bash
+   git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+   git branch -M main
+   git push -u origin main
+   ```
+
+### 2. Deploy to Vercel
+1. Log in to [Vercel](https://vercel.com) using your GitHub account.
+2. Click **Add New** > **Project**.
+3. Import your repository and click **Deploy**.
+4. Vercel will automatically build and host your site. Any future pushes to `main` will trigger an automatic update.
+
 ## 📂 Project Structure
 
 ```text
