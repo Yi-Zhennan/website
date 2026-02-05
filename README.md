@@ -35,7 +35,7 @@ The easiest way to deploy this website is using **Vercel** with **GitHub**.
 1. Create a new repository on [GitHub](https://github.com/new).
 2. Push your local code:
    ```bash
-   git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+   git remote add origin https://github.com/Yi-Zhennan/website.git
    git branch -M main
    git push -u origin main
    ```
@@ -46,7 +46,25 @@ The easiest way to deploy this website is using **Vercel** with **GitHub**.
 3. Import your repository and click **Deploy**.
 4. Vercel will automatically build and host your site. Any future pushes to `main` will trigger an automatic update.
 
-## 📂 Project Structure
+## � How to Update Your Website
+
+Every time you make changes to your code locally and want to update the live website:
+
+1. **Stage your changes**:
+   ```bash
+   git add .
+   ```
+2. **Commit your changes**:
+   ```bash
+   git commit -m "Describe your changes here"
+   ```
+3. **Push to GitHub**:
+   ```bash
+   git push
+   ```
+*Vercel will automatically detect the new commit and redeploy your site within seconds.*
+
+## �📂 Project Structure
 
 ```text
 ├── src/
