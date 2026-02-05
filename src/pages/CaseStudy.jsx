@@ -19,13 +19,13 @@ const CaseStudy = () => {
     return (
         <div className="case-study-page">
             <div style={{ marginBottom: '2rem' }}>
-                <Link to="/projects" style={{ textDecoration: 'none', color: 'var(--ink-color)', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
+                <Link to="/projects" style={{ marginTop: '2rem', textDecoration: 'none', color: 'var(--ink-color)', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
                     <span>&larr;</span> Back to Projects
                 </Link>
             </div>
 
             <header style={{ marginBottom: '4rem', textAlign: 'center' }}>
-                <h1 style={{ fontSize: '3rem' }}>{project.title}</h1>
+                <h1 style={{ fontSize: '1.6rem' }}>{project.title}</h1>
                 <p style={{ fontSize: '1.2rem', color: '#666', fontStyle: 'italic' }}>{project.keywords}</p>
             </header>
 

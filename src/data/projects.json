@@ -3,10 +3,10 @@
         "id": 1,
         "title": "Design and Development of A Teacher-Friendly Robot to Support Children's Soft Skills Development",
         "thumbnail": "/teachersystem.png",
-        "keywords": "3D Printing, Lightweight Robot, Soft Skills, Education, Classroom, Integration",
+        "keywords": "Group HRI,3D Printing, Lightweight Robot, Soft Skills, Education, Classroom, Integration",
         "role": "Lead Researcher & Designer",
         "timeline": "Aug 2024 - Dec 2024",
-        "description": "Lightweight Robot, Soft Skills, Education, Classroom, Integration, 3D Printing",
+        "description": "Group HRI,Lightweight Robot, Soft Skills, Education, Classroom, Integration, 3D Printing",
         "sections": [
             {
                 "type": "text",
@@ -22,9 +22,10 @@
         "id": 2,
         "title": "The Robot Who Carries Stories: Asynchronous Storytelling across Distant Places",
         "thumbnail": "/storytelling2.jpg",
+        "keywords": "Storytelling, Intercultural Communication, Group HRI",
         "role": "Full-stack Developer",
         "timeline": "Jan 2024 - May 2024",
-        "description": "A digital-physical hybrid tool for children's creative writing.",
+        "description": "Storytelling, Intercultural Communication, Group HRI",
         "sections": [
             {
                 "type": "text",
