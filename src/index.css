@@ -133,4 +133,15 @@ img {
   section {
     margin-bottom: 3rem !important;
   }
+
+  .pronunciation-tooltip {
+    left: 50% !important;
+    transform: translateX(-50%) translateY(0) rotate(0deg) !important;
+    width: 280px !important;
+    max-width: 90vw !important;
+  }
+
+  .mobile-hide {
+    display: none !important;
+  }
 }

@@ -80,7 +80,7 @@ const Home = () => {
                         </span>|易振南
 
                         {/* Pronunciation Tooltip */}
-                        <div style={{
+                        <div className="pronunciation-tooltip" style={{
                             position: 'absolute',
                             top: '110%',
                             left: '60%',
@@ -94,6 +94,7 @@ const Home = () => {
                             {showTooltip && (
                                 <>
                                     <ConnectorDoodle
+                                        className="mobile-hide"
                                         style={{
                                             position: 'absolute',
                                             top: '-45px',
