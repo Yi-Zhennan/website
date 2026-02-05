@@ -14,13 +14,17 @@
   --font-hand: 'Patrick Hand', cursive;
   --font-hand-bold: 'Kalam', cursive;
   --font-body: 'Inter', sans-serif;
-  /* Or use hand font for everything if desired */
 
   /* Borders */
   --border-rough: 2px solid var(--ink-color);
   --dot-color: rgb(240, 240, 240);
-  /* Faint dot color */
 }
+
+html {
+  overflow-y: scroll;
+  /* Prevents layout jump when scrollbar appears */
+}
+
 
 body {
   margin: 0;
@@ -85,12 +89,27 @@ img {
 
 
 /* Responsive Utilities */
+.layout-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 2rem 2rem 2rem;
+  /* Added 2rem top padding to whole layout */
+}
+
+.page-content {
+  margin-top: 2rem;
+  /* Additional space specifically below navigation */
+}
+
+
 .container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
+
 
 .responsive-grid {
   display: grid;

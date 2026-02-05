@@ -6,6 +6,10 @@ const Layout = () => {
 
     // Handle scroll on location change
     React.useEffect(() => {
+        if ('scrollRestoration' in window.history) {
+            window.history.scrollRestoration = 'manual';
+        }
+
         if (location.hash) {
             const elem = document.getElementById(location.hash.substring(1));
             if (elem) {
@@ -23,7 +27,7 @@ const Layout = () => {
     ];
 
     return (
-        <div className="layout-container" style={{ maxWidth: '1200px', margin: '0 auto', padding: '0.5rem 2rem 2rem 2rem' }}>
+        <div className="layout-container">
             {/* Navbar / Header */}
             <nav className="nav-container" style={{
                 display: 'flex',
@@ -60,7 +64,9 @@ const Layout = () => {
                 </div>
             </nav>
 
-            <Outlet />
+            <main className="page-content">
+                <Outlet />
+            </main>
 
             <footer style={{ textAlign: 'center', padding: '4rem 0', color: 'var(--ink-color)', fontFamily: 'var(--font-hand)', fontSize: '1.1rem' }}>
                 <div style={{ borderTop: '1px solid rgba(44, 62, 80, 0.1)', paddingTop: '2rem' }}>

@@ -5,14 +5,14 @@ import blogData from '../data/blogs.json';
 const Blogs = () => {
     return (
         <div className="blogs-archive">
-            <div style={{ marginBottom: '2rem', marginTop: '2rem' }}>
+            <div style={{ marginBottom: '2rem', fontSize: '1.3rem' }}>
                 <Link to="/#blogs" style={{ color: 'var(--ink-color)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
                     <span>&larr;</span> Back Home
                 </Link>
             </div>
 
             <header style={{ marginBottom: '4rem', textAlign: 'center' }}>
-                <h1 style={{ fontSize: '3.5rem', transform: 'rotate(1deg)' }}>Blogs</h1>
+                <h1 style={{ fontSize: '2.5rem', transform: 'rotate(1deg)' }}>Blogs</h1>
             </header>
 
             <div style={{ display: 'grid', gap: '3rem' }}>
@@ -20,7 +20,7 @@ const Blogs = () => {
                     <article key={post.id} style={{ borderBottom: '1px solid rgba(44, 62, 80, 0.1)', paddingBottom: '2rem' }}>
                         <span style={{ fontFamily: 'var(--font-body)', color: '#888' }}>{post.date}</span>
                         <Link to={`/blog/${post.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
-                            <h2 style={{ fontFamily: 'var(--font-hand-bold)', margin: '0.5rem 0', fontSize: '1.8rem' }}>{post.title}</h2>
+                            <h2 style={{ fontFamily: 'var(--font-hand-bold)', margin: '0.5rem 0', fontSize: '1.6rem' }}>{post.title}</h2>
                         </Link>
                         <p style={{ fontFamily: 'var(--font-body)', color: '#444', maxWidth: '800px', fontSize: '1.1rem' }}>{post.excerpt}</p>
                         <Link to={`/blog/${post.id}`} style={{ color: 'var(--accent-color)', fontWeight: 'bold', textDecoration: 'none' }}>Read more &rarr;</Link>

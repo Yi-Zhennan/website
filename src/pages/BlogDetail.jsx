@@ -16,15 +16,15 @@ const BlogDetail = () => {
 
     return (
         <div className="blog-detail-page">
-            <div style={{ marginBottom: '2rem', marginTop: '2rem' }}>
+            <div style={{ marginBottom: '2rem', fontSize: '1.3rem' }}>
                 <Link to="/blogs" style={{ textDecoration: 'none', color: 'var(--ink-color)', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
-                    <span>&larr;</span> Back to Blogs
+                    <span>&larr;</span> Back to ALl Blogs
                 </Link>
             </div>
 
             <header style={{ marginBottom: '4rem' }}>
                 <span style={{ fontFamily: 'var(--font-body)', color: '#888' }}>{post.date}</span>
-                <h1 style={{ fontSize: '3rem', marginTop: '0.5rem', transform: 'rotate(-0.5deg)' }}>{post.title}</h1>
+                <h1 style={{ fontSize: '2rem', marginTop: '0.5rem', transform: 'rotate(-0.5deg)' }}>{post.title}</h1>
             </header>
 
             <div className="main-content-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) 280px', gap: '4rem' }}>

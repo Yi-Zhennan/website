@@ -6,14 +6,14 @@ import projectData from '../data/projects.json';
 const Projects = () => {
     return (
         <div className="projects-archive">
-            <div style={{ marginBottom: '2rem', marginTop: '2rem' }}>
+            <div style={{ marginBottom: '2rem', fontSize: '1.3rem' }}>
                 <Link to="/#projects" style={{ textDecoration: 'none', color: 'var(--ink-color)', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
-                    <span>&larr;</span> Back to Home
+                    <span>&larr;</span> Back Home
                 </Link>
             </div>
 
             <header style={{ marginBottom: '4rem', textAlign: 'center' }}>
-                <h1 style={{ fontSize: '3.5rem', transform: 'rotate(1deg)' }}>Projects</h1>
+                <h1 style={{ fontSize: '2.5rem', transform: 'rotate(1deg)' }}>Projects</h1>
             </header>
 
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '3rem' }}>

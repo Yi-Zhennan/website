@@ -18,9 +18,9 @@ const CaseStudy = () => {
 
     return (
         <div className="case-study-page">
-            <div style={{ marginBottom: '2rem' }}>
-                <Link to="/projects" style={{ marginTop: '2rem', textDecoration: 'none', color: 'var(--ink-color)', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
-                    <span>&larr;</span> Back to Projects
+            <div style={{ marginBottom: '2rem', fontSize: '1.3rem' }}>
+                <Link to="/projects" style={{ textDecoration: 'none', color: 'var(--ink-color)', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
+                    <span>&larr;</span> Back to All Projects
                 </Link>
             </div>
 
