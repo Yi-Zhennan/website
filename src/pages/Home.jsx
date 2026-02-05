@@ -37,7 +37,7 @@ const Home = () => {
                 <div style={{ position: 'relative' }}>
                     <h2
                         style={{
-                            fontSize: '2.8rem',
+                            fontSize: '2.4rem',
                             marginBottom: '1rem',
                             position: 'relative',
                             display: 'inline-block',
