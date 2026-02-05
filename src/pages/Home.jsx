@@ -134,7 +134,16 @@ const Home = () => {
                                             <div style={{ fontFamily: 'var(--font-hand)', fontSize: '0.9rem', lineHeight: '1.4' }}>
                                                 <p style={{ margin: 0 }}><strong>Family:</strong> 易 (yì) — like "easy"</p>
                                                 <p style={{ margin: '0.2rem 0' }}><strong>Given:</strong> 振南 (zhèn nán)</p>
-                                                <p style={{ margin: 0, opacity: 0.8, fontStyle: 'italic' }}>Or just call me <strong>Jane-Nan</strong>!</p>
+                                                <p style={{ margin: 0, fontStyle: 'normal', fontSize: '1rem' }}>
+                                                    Feel free to call me <span style={{
+                                                        backgroundColor: 'var(--sticky-yellow)',
+                                                        padding: '0 4px',
+                                                        borderRadius: '2px',
+                                                        display: 'inline-block',
+                                                        color: 'var(--ink-color)',
+                                                        fontStyle: 'normal'
+                                                    }}><strong>Jane-Nan</strong></span> if that's easier!
+                                                </p>
                                             </div>
                                             <audio ref={audioRef} src="/zhennan.mp3" />
                                         </div>
