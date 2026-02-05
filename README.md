@@ -1,0 +1,69 @@
+# Personal Website - Zhennan Yi
+
+A personal portfolio website with a unique hand-drawn aesthetic, built using React and Vite. The design focuses on a "physical sketchbook" feel with hand-drawn components, ink-like colors, and interactive doodles.
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Node.js (Latest LTS recommended)
+- npm or yarn
+
+### Installation
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Development
+Run the development server:
+```bash
+npm run dev
+```
+
+### Build
+Build the project for production:
+```bash
+npm run build
+```
+
+## 📂 Project Structure
+
+```text
+├── src/
+│   ├── components/     # Reusable UI components
+│   ├── pages/          # Individual page components
+│   ├── data/           # JSON data files for blogs and projects
+│   ├── assets/         # Static assets like images
+│   ├── App.jsx         # Main application component & routing
+│   ├── main.jsx        # Entry point
+│   └── index.css       # Global styles and design tokens
+├── public/             # Public assets
+├── package.json        # Dependencies and scripts
+└── vite.config.js      # Vite configuration
+```
+
+## 🛠️ Components & Pages
+
+### Components
+- **`Layout.jsx`**: The foundational layout including a sticky navigation bar and site footer.
+- **`HandDrawnCard.jsx`**: A card component styled with a "sketchy" border and hand-drawn feel.
+- **`StickyNote.jsx`**: Interactive sticky note UI elements used for highlighting information.
+- **`Doodles.jsx`**: A collection of SVGs and animations representing hand-drawn elements like arrows, stars, and social media icons.
+
+### Pages
+- **`Home.jsx`**: The main landing page featuring an introduction, "About Me", and previews of work.
+- **`Blogs.jsx` / `BlogDetail.jsx`**: Blog listing and detailed individual post views.
+- **`Projects.jsx` / `CaseStudy.jsx`**: Project showcase and in-depth case study presentations.
+
+## 🎨 Design System
+The website uses a custom hand-drawn theme defined in `index.css`:
+- **Paper Background**: Soft off-white texture.
+- **Ink Color**: Deep blue/gray mimics realistic ink.
+- **Typography**: Hand-drawn style fonts for headers and accents.
+
+## 📦 Tech Stack
+- **Framework**: [React 19](https://react.dev/)
+- **Build Tool**: [Vite](https://vite.dev/)
+- **Routing**: [React Router](https://reactrouter.com/)
+- **Icons**: [React Icons](https://react-icons.github.io/react-icons/)

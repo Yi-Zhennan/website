@@ -1,0 +1,97 @@
+  
+            
+##放在单个project data里，添加视频          
+            
+              {
+                "type": "video",
+                "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                "caption": "A demonstration of the interaction loop."
+            }
+  
+  ## 放在project detail page，侧面sticky notes
+
+   {/* Sidebar / Notes */}
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem', position: 'sticky', top: '6rem' }}>
+                    <StickyNote color="yellow" rotate={-2}>
+                        <strong>Role:</strong><br /> {project.role}
+                    </StickyNote>
+
+                    <StickyNote color="cyan" rotate={2}>
+                        <strong>Timeline:</strong><br /> {project.timeline}
+                    </StickyNote>
+
+  
+  
+  
+  ## Blog
+  {
+        "id": 2,
+        "title": "My Creative Process",
+        "date": "Oct 24, 2023",
+        "excerpt": "Exploring how sketching ideas on paper leads to better digital designs...",
+        "sections": [
+            {
+                "type": "text",
+                "value": "This is where I talk about how I sketch my ideas before touching the keyboard. It starts with simple shapes and slowly evolves into complex layouts. I find that paper allows for faster iteration and less pressure than a blank digital canvas."
+            },
+            {
+                "type": "image",
+                "url": "/blog-1.jpg",
+                "caption": "My initial sketches for the portfolio project."
+            },
+            {
+                "type": "text",
+                "value": "After the initial sketch, I move to a higher fidelity on paper, focusing on the spacing and the wobbly borders that will eventually become CSS constraints. This bridge between physical and digital is the core of my aesthetic."
+            }
+        ],
+        "takeaway": "Always keep a physical notebook nearby. You never know when inspiration will strike!"
+    },
+    {
+        "id": 3,
+        "title": "Building with React & Paper",
+        "date": "Sep 12, 2023",
+        "excerpt": "Using CSS and SVG to simulate physical materials in a web environment...",
+        "sections": [
+            {
+                "type": "text",
+                "value": "Combining the structure of React with the organic feel of paper textures is a challenge but very rewarding. I used SVG filters for noise and custom drop shadows to make the sticky notes feel like they are popping off the page."
+            },
+            {
+                "type": "video",
+                "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                "caption": "A quick demo of the wobbly border animation in action."
+            },
+            {
+                "type": "text",
+                "value": "The key is to not perfectly align everything. A slight rotation of 1 or 2 degrees (using CSS transform) goes a long way in making a interface feel less like a grid and more like a desk covered in notes."
+            }
+        ],
+        "takeaway": "Don't be afraid to experiment with organic shapes in a digital space."
+    },
+    {
+        "id": 4,
+        "title": "The Art of the Sketchbook",
+        "date": "Aug 05, 2023",
+        "excerpt": "Why every designer should keep a physical notebook for brainstorming...",
+        "sections": [
+            {
+                "type": "text",
+                "value": "Why physical sketching is still superior for brainstorming in the digital age. It connects the hand and the brain in a way that stylus and screen sometimes fail to replicate. My sketchbook is a mess, but it's where my best ideas are born."
+            },
+            {
+                "type": "image",
+                "url": "https://via.placeholder.com/800x400",
+                "caption": "A look inside my daily brainstorming notebook."
+            },
+            {
+                "type": "text",
+                "value": "I often find that when I'm stuck on a coding problem, stepping away from the screen and drawing the logic out on paper reveals the solution instantly. It's a meditative process."
+            },
+            {
+                "type": "image",
+                "url": "https://via.placeholder.com/800x400",
+                "caption": "Crochet textures translated into SVG patterns."
+            }
+        ],
+        "takeaway": "Your sketchbook doesn't have to be pretty to be useful!"
+    }

@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "title": "My Reading List",
+        "date": "Jan 29, 2026",
+        "excerpt": "Some books I read recently...",
+        "sections": [
+            {
+                "type": "split",
+                "ratio": "1fr 2fr",
+                "left": {
+                    "type": "image",
+                    "url": "/bigbook.jpg",
+                    "link": "https://www.routledge.com/The-Big-Book-of-Storysharing-A-Handbook-for-Personal-Storytelling-with-Children-and-Young-People-Who-Have-Severe-Communication-Difficulties/Grove/p/book/9781909301405"
+                },
+                "right": {
+                    "type": "text",
+                    "value": "The Big Book of Storytsharing \n \nThis book provides both a fundamental and a practical introduction to storytelling and storysharing. It draws on research and practice into personal storytelling. Although it is mainly for children and young people with communication issues, some suggestions are also applied to general audience.",
+                    "fontSize": "1.1rem"
+                }
+            },
+            {
+                "type": "split",
+                "ratio": "1fr 2fr",
+                "left": {
+                    "type": "image",
+                    "url": "/designrobot.jpg",
+                    "link": "https://www.routledge.com/Designing-Interactions-with-Robots-Methods-and-Perspectives/Lupetti-Zaga-Cila-Sabanovic-Jung/p/book/9781032430270"
+                },
+                "right": {
+                    "type": "text",
+                    "value": "Designing Interactions with Robots \n \nThis book includes many vivid examples and crucial guidance to explain how to design interactions with robots. It shows the HRI research landscape, and is helpful for students (like me) who are interested in but new to HRI research!",
+                    "fontSize": "1.1rem"
+                }
+            }
+        ]
+    }
+]

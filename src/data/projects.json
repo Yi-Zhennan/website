@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "title": "Design and Development of A Teacher-Friendly Robot to Support Children's Soft Skills Development",
+        "thumbnail": "/teachersystem.png",
+        "keywords": "3D Printing, Lightweight Robot, Soft Skills, Education, Classroom, Integration",
+        "role": "Lead Researcher & Designer",
+        "timeline": "Aug 2024 - Dec 2024",
+        "description": "Lightweight Robot, Soft Skills, Education, Classroom, Integration, 3D Printing",
+        "sections": [
+            {
+                "type": "text",
+                "value": "We design and develop a teacher-friendly educational robot that enables teachers to easily create classroom activities through AI-supported tools. This project investigates how lightweight, 3D-printed robots can be integrated into real classrooms to support children’s soft skills development."
+            },
+            {
+                "type": "image",
+                "url": "/softskills.jpg"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "The Robot Who Carries Stories: Asynchronous Storytelling across Distant Places",
+        "thumbnail": "/storytelling2.jpg",
+        "role": "Full-stack Developer",
+        "timeline": "Jan 2024 - May 2024",
+        "description": "A digital-physical hybrid tool for children's creative writing.",
+        "sections": [
+            {
+                "type": "text",
+                "value": "We explore robots as mediators in asynchronous storytelling across distant places. By designing robot-mediated storytelling activities, this work examines how robots can create unique relational spaces for narrative construction, social sharing, and cross-cultural creative expression."
+            },
+            {
+                "type": "image",
+                "url": "/storytelling2.jpg"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Probing Family AI Robot Use: Designing Workbook Probes for Families",
+        "thumbnail": "/family.jpg",
+        "keywords": "Family, Child-Robot Interaction, AI Robot, Workbook, Research through Design",
+        "role": "Lead Researcher & Designer",
+        "timeline": "Aug 2024 - Dec 2024",
+        "description": "Family, Child-Robot Interaction, AI Robot, Workbook, Research through Design",
+        "sections": [
+            {
+                "type": "text",
+                "value": "We study family–robot interaction through the design of a workbook-based probe that invites families' reflections on future uses of AI robots in the home. This project uses workbooks as a design research method to elicit conversations about values, expectations, and tensions around living with AI technologies."
+            },
+            {
+                "type": "image",
+                "url": "/family.jpg"
+            }
+        ]
+    }
+]

@@ -1,0 +1,79 @@
+:root {
+  /* Colors */
+  --paper-bg: #ffffff;
+  --ink-color: #2c3e50;
+  --accent-color: #ff6b6b;
+
+  /* Sticky Note Colors (User-defined) */
+  --sticky-yellow: #fef7cd;
+  --sticky-pink: #ffcee0;
+  --sticky-cyan: #beeaf3;
+  --sticky-green: #dcedc8;
+
+  /* Fonts */
+  --font-hand: 'Patrick Hand', cursive;
+  --font-hand-bold: 'Kalam', cursive;
+  --font-body: 'Inter', sans-serif;
+  /* Or use hand font for everything if desired */
+
+  /* Borders */
+  --border-rough: 2px solid var(--ink-color);
+  --dot-color: rgb(240, 240, 240);
+  /* Faint dot color */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--paper-bg);
+  color: var(--ink-color);
+  font-family: var(--font-hand);
+
+  /* Dot grid pattern */
+  background-image: radial-gradient(var(--dot-color) 1px, transparent 1px);
+  background-size: 20px 20px;
+  background-position: 10px 10px;
+  background-attachment: fixed;
+  /* Keeps dots static when scrolling */
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar styling for that extra touch */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(44, 62, 80, 0.2);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(44, 62, 80, 0.4);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-hand-bold);
+  font-weight: 700;
+  margin-top: 0;
+}
+
+button {
+  font-family: var(--font-hand);
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
