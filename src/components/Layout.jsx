@@ -25,7 +25,7 @@ const Layout = () => {
     return (
         <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0.5rem 2rem 2rem 2rem' }}>
             {/* Navbar / Header */}
-            <nav style={{
+            <nav className="nav-container" style={{
                 display: 'flex',
                 justifyContent: 'space-between',
                 alignItems: 'center',
@@ -36,28 +36,25 @@ const Layout = () => {
                 backgroundColor: 'rgba(255, 255, 255, 0.85)', // var(--paper-bg) with opacity
                 backdropFilter: 'blur(8px)',
                 WebkitBackdropFilter: 'blur(8px)',
-                padding: '1rem 0',
-                paddingLeft: '2rem',
-                paddingRight: '2rem',
+                padding: '1rem 2rem',
                 borderBottom: '1px dashed rgba(44, 62, 80, 0.2)', // faint ink
                 transition: 'all 0.3s ease',
-                marginLeft: '-2rem',
-                marginRight: '-2rem'
+                margin: '0 -2rem'
             }}>
                 <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
                     <h1 style={{ fontSize: '2rem', margin: 0 }}>Yi, Zhennan</h1>
                 </Link>
-                <div style={{ display: 'flex', gap: '1.5rem' }}>
+                <div className="nav-links" style={{ display: 'flex', gap: '1.5rem' }}>
                     {navLinks.map((item, i) => {
                         return (
-                            <a key={item.name} href={item.path} style={{
+                            <Link key={item.name} to={item.path} style={{
                                 textDecoration: 'none',
                                 color: 'var(--ink-color)',
                                 fontSize: '1.2rem',
                                 borderBottom: 'none'
                             }}>
                                 {item.name}
-                            </a>
+                            </Link>
                         );
                     })}
                 </div>

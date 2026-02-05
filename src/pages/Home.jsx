@@ -26,7 +26,7 @@ const Home = () => {
     return (
         <>
             {/* Hero Section */}
-            <section style={{
+            <section className="mobile-stack" style={{
                 display: 'grid',
                 gridTemplateColumns: '1.9fr 1fr',
                 gap: '4rem',
@@ -168,11 +168,11 @@ const Home = () => {
             </section >
 
             <section id="about" style={{ marginBottom: '6rem' }}>
-                <div style={{
+                <div className="mobile-grid-1" style={{
                     display: 'grid',
                     gap: '2rem',
                     // On larger screens, give research more width
-                    gridTemplateColumns: 'minmax(320px, 1.3fr) minmax(280px, 1.1fr) minmax(280px, 0.6fr)'
+                    gridTemplateColumns: 'minmax(300px, 1.3fr) minmax(280px, 1.1fr) minmax(200px, 0.6fr)'
                 }}>
                     <div style={{ fontSize: '1.1rem', lineHeight: 1.6 }}>
                         <h3>Research</h3>

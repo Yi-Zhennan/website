@@ -77,3 +77,60 @@ button {
 * {
   box-sizing: border-box;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Responsive Utilities */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.responsive-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  :root {
+    --nav-height: auto;
+  }
+
+  .mobile-stack {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2rem !important;
+  }
+
+  .mobile-grid-1 {
+    grid-template-columns: 1fr !important;
+  }
+
+  .hero-title {
+    font-size: 2rem !important;
+  }
+
+  .nav-container {
+    padding: 1rem !important;
+    flex-direction: column !important;
+    gap: 1rem !important;
+    text-align: center;
+  }
+
+  .nav-links {
+    gap: 1rem !important;
+    justify-content: center;
+    width: 100%;
+  }
+
+  section {
+    margin-bottom: 3rem !important;
+  }
+}
