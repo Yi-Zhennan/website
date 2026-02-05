@@ -1,5 +1,6 @@
 import React from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
+import VisitorCounter from './VisitorCounter';
 
 const Layout = () => {
     const location = useLocation();
@@ -71,6 +72,8 @@ const Layout = () => {
             <footer style={{ textAlign: 'center', padding: '4rem 0', color: 'var(--ink-color)', fontFamily: 'var(--font-hand)', fontSize: '1.1rem' }}>
                 <div style={{ borderTop: '1px solid rgba(44, 62, 80, 0.1)', paddingTop: '2rem' }}>
                     &copy; {new Date().getFullYear()} Zhennan Yi. All rights reserved.
+                    <br />
+                    <VisitorCounter />
                 </div>
             </footer>
         </div>
