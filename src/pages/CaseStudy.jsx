@@ -29,7 +29,7 @@ const CaseStudy = () => {
                 <p style={{ fontSize: '1.2rem', color: '#666', fontStyle: 'italic' }}>{project.keywords}</p>
             </header>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) 280px', gap: '4rem', alignItems: 'start' }}>
+            <div className="main-content-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) 280px', gap: '4rem', alignItems: 'start' }}>
 
                 {/* Main Content Area */}
                 <article style={{ fontFamily: 'var(--font-body)', lineHeight: 1.8, fontSize: '1.1rem' }}>
@@ -40,7 +40,7 @@ const CaseStudy = () => {
 
                         if (section.type === 'image') {
                             return (
-                                <div key={index} style={{
+                                <div key={index} className="mobile-card-padding" style={{
                                     backgroundColor: 'white',
                                     padding: '1rem 1rem 3rem 1rem',
                                     boxShadow: '0 4px 10px rgba(0,0,0,0.15)',

@@ -27,7 +27,7 @@ const BlogDetail = () => {
                 <h1 style={{ fontSize: '3rem', marginTop: '0.5rem', transform: 'rotate(-0.5deg)' }}>{post.title}</h1>
             </header>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) 280px', gap: '4rem' }}>
+            <div className="main-content-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) 280px', gap: '4rem' }}>
                 <article style={{ fontFamily: 'var(--font-body)', lineHeight: 1.8, fontSize: '1.2rem' }}>
 
                     {post.sections.map((section, index) => {
@@ -131,7 +131,7 @@ const BlogDetail = () => {
 
                             if (sec.type === 'split') {
                                 return (
-                                    <div key={idx} style={{
+                                    <div key={idx} className="mobile-stack" style={{
                                         display: 'grid',
                                         gridTemplateColumns: sec.ratio || '1fr 1fr',
                                         gap: '2rem',

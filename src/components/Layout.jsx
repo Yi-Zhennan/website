@@ -23,7 +23,7 @@ const Layout = () => {
     ];
 
     return (
-        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0.5rem 2rem 2rem 2rem' }}>
+        <div className="layout-container" style={{ maxWidth: '1200px', margin: '0 auto', padding: '0.5rem 2rem 2rem 2rem' }}>
             {/* Navbar / Header */}
             <nav className="nav-container" style={{
                 display: 'flex',
