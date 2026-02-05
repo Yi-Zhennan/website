@@ -7,29 +7,25 @@ const VisitorCounter = () => {
     const [error, setError] = useState(false);
 
     useEffect(() => {
-        // Using countapi.xyz
-        // Namespace: yi-zhennan-website
-        // Key: visits
+        // Using counterapi.dev
         const fetchCount = async () => {
             try {
-                // First try to hit the API with 'hit' to increment
+                // First try to hit the API with 'up' to increment
                 // Check if we already visited in this session to avoid double counting on refresh (optional, simple version hits every time)
-                const response = await fetch('https://api.countapi.xyz/hit/yi-zhennan.github.io/visits');
+                const response = await fetch('https://api.counterapi.dev/v1/yi-zhennan.github.io/visits/up');
 
                 if (!response.ok) {
                     throw new Error('API Error');
                 }
 
                 const data = await response.json();
-                setCount(data.value);
+                setCount(data.count);
             } catch (err) {
                 console.error("Visitor counter failed:", err);
                 try {
-                    // Fallback: try to just get info if hit fails
-                    const response = await fetch('https://api.countapi.xyz/info/yi-zhennan.github.io/visits');
-                    if (!response.ok) throw new Error('Info API Error');
-                    const data = await response.json();
-                    setCount(data.value);
+                    // Fallback: try to just get info if hit fails (CounterAPI.dev uses same structure mostly, or just fail safely)
+                    // For now, if up fails, we show fallback
+                    setError(true);
                 } catch (fallbackErr) {
                     setError(true);
                 }
