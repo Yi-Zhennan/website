@@ -111,3 +111,21 @@ The website uses a custom hand-drawn theme defined in `index.css`:
 - **Build Tool**: [Vite](https://vite.dev/)
 - **Routing**: [React Router](https://reactrouter.com/)
 - **Icons**: [React Icons](https://react-icons.github.io/react-icons/)
+
+## Fonts Usage
+
+This project uses the following fonts, defined in `src/index.css`:
+
+1.  **Patrick Hand** (`var(--font-hand)`)
+    *   **Usage:** *Currently Unused* (Replaced by `var(--font-hand-bold)`)
+    *   **Description:** A friendly, handwritten-style font available for lighter text if needed.
+
+2.  **Kalam** (`var(--font-hand-bold)`)
+    *   **Usage:** Default Body Text, Headings (`h1` - `h6`), Buttons, Footer, Tooltips, Captions.
+    *   **Description:** A bolder handwritten font used for the general UI and emphasis.
+
+3.  **Inter** (`var(--font-body)`)
+    *   **Usage:**
+        *   **Home Page:** Research description, Publications section.
+        *   **Blog & Projects:** Date snippets, Main article content (Case Studies, Blog Details).
+    *   **Description:** A clean sans-serif font used for long-form text and dense information (like bibliography) to ensure readability.

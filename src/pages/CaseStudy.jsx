@@ -26,7 +26,7 @@ const CaseStudy = () => {
 
             <header style={{ marginBottom: '4rem', textAlign: 'center' }}>
                 <h1 style={{ fontSize: '1.6rem' }}>{project.title}</h1>
-                <p style={{ fontSize: '1.2rem', color: '#666', fontStyle: 'italic' }}>{project.keywords}</p>
+                <p style={{ fontSize: '1.2rem', color: '#666' }}>{project.keywords}</p>
             </header>
 
             <div className="main-content-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) 280px', gap: '4rem', alignItems: 'start' }}>
@@ -58,7 +58,7 @@ const CaseStudy = () => {
                                         }}
                                     />
                                     {section.caption && (
-                                        <div style={{ textAlign: 'center', marginTop: '1rem', fontFamily: 'var(--font-hand)', fontSize: '1.5rem', color: 'var(--ink-color)' }}>
+                                        <div style={{ textAlign: 'center', marginTop: '1rem', fontFamily: 'var(--font-hand-bold)', fontSize: '1.5rem', color: 'var(--ink-color)' }}>
                                             {section.caption}
                                         </div>
                                     )}

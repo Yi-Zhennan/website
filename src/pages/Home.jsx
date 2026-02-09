@@ -5,6 +5,7 @@ import { Arrow, Star, EmailDoodle, LinkedInDoodle, GoogleScholarDoodle, XDoodle,
 import { Link } from 'react-router-dom';
 import blogData from '../data/blogs.json';
 import projectData from '../data/projects.json';
+import publicationData from '../data/publications.json';
 
 const Home = () => {
     const audioRef = React.useRef(null);
@@ -63,7 +64,7 @@ const Home = () => {
                                     position: 'absolute',
                                     bottom: '-28px',
                                     right: '-50px',
-                                    fontFamily: 'var(--font-hand)',
+                                    fontFamily: 'var(--font-hand-bold)',
                                     fontSize: '0.8rem',
                                     color: 'var(--ink-color)',
                                     opacity: 0.5,
@@ -131,7 +132,7 @@ const Home = () => {
                                                 </button>
                                             </div>
 
-                                            <div style={{ fontFamily: 'var(--font-hand)', fontSize: '0.9rem', lineHeight: '1.4' }}>
+                                            <div style={{ fontFamily: 'var(--font-hand-bold)', fontSize: '0.9rem', lineHeight: '1.4' }}>
                                                 <p style={{ margin: 0 }}><strong>Family:</strong> 易 (yì) — like "easy"</p>
                                                 <p style={{ margin: '0.2rem 0' }}><strong>Given:</strong> 振南 (zhèn nán)</p>
                                                 <p style={{ margin: 0, fontStyle: 'normal', fontSize: '1rem' }}>
@@ -152,7 +153,7 @@ const Home = () => {
                             )}
                         </div>
                     </h2>
-                    <p style={{ fontSize: '1.35rem', lineHeight: 1.8 }}>
+                    <p style={{ fontSize: '1.35rem', lineHeight: 1.8, fontFamily: 'var(--font-hand-bold)' }}>
                         Informatics PhD student @IUB <br />
                         B.S. in Psychology @BNU<br />
                         I enjoy route climbing, choreography and crochet.<br />
@@ -184,12 +185,12 @@ const Home = () => {
                     // On larger screens, give research more width
                     gridTemplateColumns: 'minmax(300px, 1.3fr) minmax(280px, 1.1fr) minmax(200px, 0.6fr)'
                 }}>
-                    <div style={{ fontSize: '1.1rem', lineHeight: 1.6 }}>
+                    <div style={{ fontSize: '1.1rem', lineHeight: 1.6, fontFamily: 'var(--font-hand-bold)' }}>
                         <h3>Research</h3>
                         <p>Situated at the intersection of artificial intelligence, robotics, and psychology, my research investigates
-                            the design of social robots for children in educational and family contexts, focusing on how robot
+                            <strong> the design of social robots for children in educational and family contexts</strong>, focusing on how robot
                             interactions support social emotional development, creativity, and shared meaning-making.
-                            I adopt research-through-design and participatory approaches, creating and studying interactive artifacts to
+                            I adopt <strong>research-through-design</strong> and <strong>participatory approaches</strong>, creating and studying interactive artifacts to
                             explore how robots can be meaningfully integrated into everyday social settings and made accessible to children
                             and those involved in child development.</p>
                         <p><strong>Keywords</strong>: Child-Robot Interaction, Group HRI, Social Emotional Development, Research-through-Design, Participatory Design</p>
@@ -197,7 +198,7 @@ const Home = () => {
 
                     <StickyNote color="yellow" rotate={0}>
                         <h3>News</h3>
-                        <ul style={{ paddingLeft: '1.2rem', fontSize: '1.1rem', lineHeight: 1.6 }}>
+                        <ul style={{ paddingLeft: '1.2rem', fontSize: '1.1rem', lineHeight: 1.6, fontFamily: 'var(--font-hand-bold)' }}>
                             <li><strong>[2025-12-02]</strong> One paper has been accepted to HRI.</li>
                             <li> <strong>[2025-06-08]</strong> My first paper in HRI area has been accepted to RO-MAN. </li>
                             <li><strong>[2024-04-26]</strong> Our paper won the Best Paper Award at CHI'24. </li>
@@ -222,10 +223,57 @@ const Home = () => {
                                 <XDoodle size={40} />
                             </a>
                         </div>
-                        <p style={{ marginTop: '1rem', fontFamily: 'var(--font-hand)', fontSize: '1.1rem' }}>Let's stay in touch!</p>
+                        <p style={{ marginTop: '1rem', fontFamily: 'var(--font-hand-bold)', fontSize: '1.1rem' }}>Let's stay in touch!</p>
                     </div>
                 </div>
             </section >
+
+            {/* Publication Section */}
+            <section id="publications" style={{ marginBottom: '4rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '2rem' }}>
+                    <h2 style={{ margin: 0, transform: 'rotate(-1.5deg)' }}>Recent Publications</h2>
+                    <div style={{ flex: 1, height: '2px', borderBottom: '2px dashed var(--ink-color)', opacity: 0.3 }}></div>
+                </div>
+
+                <div style={{ marginBottom: '2rem', fontFamily: 'var(--font-hand-bold)', fontSize: '1.2rem', display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '0.4rem' }}>
+                    For a full list of publications, please see my
+                    <a href="https://scholar.google.com/citations?user=RE3GEEsAAAAJ&hl" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', color: 'var(--ink-color)', textDecoration: 'underline' }}>
+                        <GoogleScholarDoodle size={20} />
+                        Google Scholar page
+                    </a>.
+                </div>
+
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontFamily: 'var(--font-body)' }}>
+                    {publicationData.map((pub, index) => (
+                        <div key={pub.id} style={{
+                            paddingBottom: '0.5rem',
+                            borderBottom: '1px dashed rgba(44, 62, 80, 0.2)'
+                        }}>
+                            <h3 style={{ margin: '0 0 0.25rem 0', fontSize: '1rem', fontFamily: 'var(--font-body)', fontWeight: 600 }}>{pub.title}</h3>
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem', fontSize: '1rem', lineHeight: '1.5' }}>
+                                <span style={{ color: 'var(--ink-color)', fontSize: '0.9rem' }}>
+                                    {pub.authors.map((author, i) => (
+                                        <React.Fragment key={i}>
+                                            {author.isMe ? <strong style={{ fontWeight: 600 }}>{author.name}</strong> : author.name}
+                                            {i < pub.authors.length - 1 ? ', ' : ''}
+                                        </React.Fragment>
+                                    ))}
+                                </span>
+                                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', alignItems: 'baseline' }}>
+                                    <span style={{ fontStyle: 'italic', color: 'var(--ink-color)', fontSize: '0.9rem', fontWeight: 600 }}>{pub.conference}</span>
+                                    {pub.links && pub.links.length > 0 && (
+                                        <div style={{ display: 'flex', gap: '0.5rem' }}>
+                                            {pub.links.map((link, i) => (
+                                                <a key={i} href={link.url} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-color)', textDecoration: 'none', fontWeight: 700, fontSize: '0.9rem' }}>[{link.label}]</a>
+                                            ))}
+                                        </div>
+                                    )}
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </section>
 
             {/* Projects Section */}
             < section id="projects" style={{ marginBottom: '6rem' }
@@ -258,7 +306,7 @@ const Home = () => {
                     ))}
                 </div>
                 <div style={{ textAlign: 'center', marginTop: '3rem' }}>
-                    <Link to="/projects" style={{ fontFamily: 'var(--font-hand)', fontSize: '1.2rem', color: 'var(--ink-color)' }}>See all projects &rarr;</Link>
+                    <Link to="/projects" style={{ fontFamily: 'var(--font-hand-bold)', fontSize: '1.2rem', color: 'var(--ink-color)' }}>See all projects &rarr;</Link>
                 </div>
             </section >
 
@@ -291,7 +339,7 @@ const Home = () => {
                     ))}
                 </div>
                 <div style={{ textAlign: 'center', marginTop: '2rem' }}>
-                    <Link to="/blogs" style={{ fontFamily: 'var(--font-hand)', fontSize: '1.2rem', color: 'var(--ink-color)' }}>See all posts &rarr;</Link>
+                    <Link to="/blogs" style={{ fontFamily: 'var(--font-hand-bold)', fontSize: '1.2rem', color: 'var(--ink-color)' }}>See all posts &rarr;</Link>
                 </div>
             </section >
         </>

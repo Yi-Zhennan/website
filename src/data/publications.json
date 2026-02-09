@@ -1,0 +1,94 @@
+[
+    {
+        "id": 1,
+        "title": "Adding More Value Than Work: Practical Guidelines for Integrating Robots into Intercultural Competence Learning.",
+        "authors": [
+            {
+                "name": "Zhennan Yi",
+                "isMe": true
+            },
+            {
+                "name": "Sophia Sakakibara Capello, Randy Gomez, and Selma Šabanović.",
+                "isMe": false
+            }
+        ],
+        "conference": "HRI ’26",
+        "year": 2026,
+        "links": [
+            {
+                "label": "PDF",
+                "url": "https://drive.google.com/file/d/1Gl9ErviPjGO6ayhgjz7hAHIIhVnqD6SZ/view?usp=sharing"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Smiles, Frowns, and Everything In Between: Understanding User Experiences with Emotion Tracking in Daily Life through Facial Expression Recognition",
+        "authors": [
+            {
+                "name": "Zhennan Yi",
+                "isMe": true
+            },
+            {
+                "name": "Xianghua(Sharon) Ding, Chenyang You, Xingchen Zhou.",
+                "isMe": false
+            }
+        ],
+        "conference": "DIS ’25",
+        "year": 2025,
+        "links": [
+            {
+                "label": "DOI",
+                "url": "https://doi.org/10.1145/3715336.3735822"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Building Friendships Across Borders: The Role of Social Robot Haru in Children Group Communication and Connection Development",
+        "authors": [
+            {
+                "name": "Zhennan Yi",
+                "isMe": true
+            },
+            {
+                "name": "Leigh Levinson, Diego Delgado-Chaves, Jose Manuel Perez-Moleron, Nabil Bougria, Antonia Krummheuer, Matthias Rehm, Anders Kalsgaard Møller, Katrine Kielsholm Ramsgaard, Selma Auala, Heike Winschiers-Theophilus, Edward Nepolo, David Calero, Devis Dal Moro, Daniel Serrano, Magí Dalmau-Moreno, Randy Gomez, Luis Merino, Selma Šabanović.",
+                "isMe": false
+            }
+        ],
+        "conference": "RO-MAN ’25",
+        "year": 2025,
+        "links": [
+            {
+                "label": "DOI",
+                "url": "https://doi.org/10.1109/RO-MAN63969.2025.11217827"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Technology-Mediated Non-pharmacological Interventions for Dementia: Needs for and Challenges in Professional, Personalized and Multi-Stakeholder Collaborative Interventions",
+        "authors": [
+            {
+                "name": "Yuling Sun",
+                "isMe": false
+            },
+            {
+                "name": "Zhennan Yi",
+                "isMe": true
+            },
+            {
+                "name": "Xiaojuan Ma, Junyan Mao, and Xin Tong",
+                "isMe": false
+            }
+        ],
+        "conference": "CHI ’24 🏆 ",
+        "year": 2024,
+        "links": [
+            {
+                "label": "DOI",
+                "url": "https://doi.org/10.1145/3613904.3641977"
+            }
+        ]
+    }
+]

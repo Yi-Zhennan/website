@@ -41,7 +41,7 @@ const VisitorCounter = () => {
 
 
     return (
-        <div className="visitor-counter" style={{ marginTop: '0.5rem', opacity: 0.8, fontFamily: 'var(--font-hand)' }}>
+        <div className="visitor-counter" style={{ marginTop: '0.5rem', opacity: 0.8, fontFamily: 'var(--font-hand-bold)' }}>
             <span style={{ fontSize: '1rem' }}>
                 {loading ? 'Visitor: ...' : error ? 'Visitor: -' : `Visitor: ${count}`}
             </span>
