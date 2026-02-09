@@ -48,6 +48,13 @@ The easiest way to deploy this website is using **Vercel** with **GitHub**.
 
 ## � How to Update Your Website
 
+
+git add .
+git commit -m "update"
+git push
+
+
+
 Every time you make changes to your code locally and want to update the live website:
 
 1. **Stage your changes**:
