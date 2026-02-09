@@ -70,10 +70,8 @@ const Layout = () => {
             </main>
 
             <footer style={{ textAlign: 'center', padding: '4rem 0', color: 'var(--ink-color)', fontFamily: 'var(--font-hand)', fontSize: '1.1rem' }}>
-                <div style={{ borderTop: '1px solid white', paddingTop: '2rem' }}>
+                <div style={{ borderTop: '1px solid rgba(44, 62, 80, 0.1)', paddingTop: '2rem' }}>
                     &copy; {new Date().getFullYear()} Zhennan Yi. All rights reserved.
-                    <br />
-                    <VisitorCounter />
                 </div>
             </footer>
         </div>
