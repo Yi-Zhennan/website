@@ -36,8 +36,8 @@ const Home = () => {
             }}>
                 <div style={{ position: 'relative' }}>
                     <h2
+                        className="hero-name"
                         style={{
-                            fontSize: '2.4rem',
                             marginBottom: '1rem',
                             position: 'relative',
                             display: 'inline-block',
