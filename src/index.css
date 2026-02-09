@@ -184,14 +184,21 @@ img {
     font-size: 2.5rem !important;
   }
 
+
   .case-study-page header,
   .blog-detail-page header,
   .blogs-archive header,
   .projects-archive header {
     margin-bottom: 2rem !important;
   }
+}
 
-  .layout-container {
-    padding: 0.5rem 1rem 1rem 1rem !important;
-  }
+.visitor-counter {
+  color: var(--paper-bg);
+  transition: color 0.3s ease;
+  cursor: default;
+}
+
+.visitor-counter:hover {
+  color: var(--ink-color);
 }
