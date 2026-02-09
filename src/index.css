@@ -145,6 +145,10 @@ img {
     font-size: 1.8rem !important;
   }
 
+  .nav-brand {
+    display: none !important;
+  }
+
   .nav-container {
     padding: 1rem !important;
     flex-direction: column !important;

@@ -47,7 +47,7 @@ const Layout = () => {
                 margin: '0 -2rem'
             }}>
                 <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
-                    <h1 style={{ fontSize: '2rem', margin: 0 }}>Yi, Zhennan</h1>
+                    <h1 className="nav-brand" style={{ fontSize: '2rem', margin: 0 }}>Yi, Zhennan</h1>
                 </Link>
                 <div className="nav-links" style={{ display: 'flex', gap: '1.5rem' }}>
                     {navLinks.map((item, i) => {
