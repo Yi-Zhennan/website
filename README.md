@@ -104,7 +104,7 @@ Every time you make changes to your code locally and want to update the live web
 The website uses a custom hand-drawn theme defined in `index.css`:
 - **Paper Background**: Soft off-white texture.
 - **Ink Color**: Deep blue/gray mimics realistic ink.
-- **Typography**: Hand-drawn style fonts for headers and accents.
+- **Typography**: Mukta Vaani for headers and accents, Inter for body.
 
 ## 📦 Tech Stack
 - **Framework**: [React 19](https://react.dev/)
@@ -117,12 +117,12 @@ The website uses a custom hand-drawn theme defined in `index.css`:
 This project uses the following fonts, defined in `src/index.css`:
 
 1.  **Patrick Hand** (`var(--font-hand)`)
-    *   **Usage:** *Currently Unused* (Replaced by `var(--font-hand-bold)`)
+    *   **Usage:** *Currently Unused* (Replaced by `var(--font-mukta-vaani)`)
     *   **Description:** A friendly, handwritten-style font available for lighter text if needed.
 
-2.  **Kalam** (`var(--font-hand-bold)`)
+2.  **Mukta Vaani** (`var(--font-mukta-vaani)`)
     *   **Usage:** Default Body Text, Headings (`h1` - `h6`), Buttons, Footer, Tooltips, Captions.
-    *   **Description:** A bolder handwritten font used for the general UI and emphasis.
+    *   **Description:** A clean, bold font used for the general UI and emphasis.
 
 3.  **Inter** (`var(--font-body)`)
     *   **Usage:**

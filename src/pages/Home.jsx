@@ -64,7 +64,7 @@ const Home = () => {
                                     position: 'absolute',
                                     bottom: '-28px',
                                     right: '-50px',
-                                    fontFamily: 'var(--font-hand-bold)',
+                                    fontFamily: 'var(--font-mukta-vaani)',
                                     fontSize: '0.8rem',
                                     color: 'var(--ink-color)',
                                     opacity: 0.5,
@@ -108,7 +108,7 @@ const Home = () => {
                                     <StickyNote color="pink" rotate={0}>
                                         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
                                             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-                                                <span style={{ fontFamily: 'var(--font-hand-bold)', fontSize: '1rem' }}>How to pronounce?</span>
+                                                <span style={{ fontFamily: 'var(--font-mukta-vaani)', fontSize: '1rem' }}>How to pronounce?</span>
                                                 <button
                                                     onClick={playAudio}
                                                     style={{
@@ -132,7 +132,7 @@ const Home = () => {
                                                 </button>
                                             </div>
 
-                                            <div style={{ fontFamily: 'var(--font-hand-bold)', fontSize: '0.9rem', lineHeight: '1.4' }}>
+                                            <div style={{ fontFamily: 'var(--font-mukta-vaani)', fontSize: '0.9rem', lineHeight: '1.4' }}>
                                                 <p style={{ margin: 0 }}><strong>Family:</strong> 易 (yì) — like "easy"</p>
                                                 <p style={{ margin: '0.2rem 0' }}><strong>Given:</strong> 振南 (zhèn nán)</p>
                                                 <p style={{ margin: 0, fontStyle: 'normal', fontSize: '1rem' }}>
@@ -153,7 +153,7 @@ const Home = () => {
                             )}
                         </div>
                     </h2>
-                    <p style={{ fontSize: '1.35rem', lineHeight: 1.8, fontFamily: 'var(--font-hand-bold)' }}>
+                    <p style={{ fontSize: '1.35rem', lineHeight: 1.8, fontFamily: 'var(--font-mukta-vaani)' }}>
                         Informatics PhD student @IUB <br />
                         B.S. in Psychology @BNU<br />
                         I enjoy route climbing, choreography and crochet.<br />
@@ -185,20 +185,22 @@ const Home = () => {
                     // On larger screens, give research more width
                     gridTemplateColumns: 'minmax(300px, 1.3fr) minmax(280px, 1.1fr) minmax(200px, 0.6fr)'
                 }}>
-                    <div style={{ fontSize: '1.1rem', lineHeight: 1.6, fontFamily: 'var(--font-hand-bold)' }}>
-                        <h3>Research</h3>
+                    <div style={{ fontSize: '1.1rem', lineHeight: 1.6, fontFamily: 'var(--font-mukta-vaani)' }}>
+                        <h3>Research Summary</h3>
                         <p>Situated at the intersection of artificial intelligence, robotics, and psychology, my research investigates
                             <strong> the design of social robots for children in educational and family contexts</strong>, focusing on how robot
                             interactions support social emotional development, creativity, and shared meaning-making.
                             I adopt <strong>research-through-design</strong> and <strong>participatory approaches</strong>, creating and studying interactive artifacts to
-                            explore how robots can be meaningfully integrated into everyday social settings and made accessible to children
+                            explore how robots can be meaningfully integrated into everyday social settings for children
                             and those involved in child development.</p>
+                        In addition, I'm interested in designing technologies for older adults, especially those who live with dementia.
                         <p><strong>Keywords</strong>: Child-Robot Interaction, Group HRI, Social Emotional Development, Research-through-Design, Participatory Design</p>
+
                     </div>
 
                     <StickyNote color="yellow" rotate={0}>
                         <h3>News</h3>
-                        <ul style={{ paddingLeft: '1.2rem', fontSize: '1.1rem', lineHeight: 1.6, fontFamily: 'var(--font-hand-bold)' }}>
+                        <ul style={{ paddingLeft: '1.2rem', fontSize: '1.1rem', lineHeight: 1.6, fontFamily: 'var(--font-mukta-vaani)' }}>
                             <li><strong>[2025-12-02]</strong> One paper has been accepted to HRI.</li>
                             <li> <strong>[2025-06-08]</strong> My first paper in HRI area has been accepted to RO-MAN. </li>
                             <li><strong>[2024-04-26]</strong> Our paper won the Best Paper Award at CHI'24. </li>
@@ -206,7 +208,7 @@ const Home = () => {
                     </StickyNote>
 
                     <div style={{ textAlign: 'center', padding: '1rem' }}>
-                        <h3 style={{ transform: 'rotate(-2deg)', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
+                        <h3 style={{ marginBottom: '1.5rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
                             <Star /> Contact <Star />
                         </h3>
                         <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center' }}>
@@ -223,7 +225,7 @@ const Home = () => {
                                 <XDoodle size={40} />
                             </a>
                         </div>
-                        <p style={{ marginTop: '1rem', fontFamily: 'var(--font-hand-bold)', fontSize: '1.1rem' }}>Let's stay in touch!</p>
+                        <p style={{ marginTop: '1rem', fontFamily: 'var(--font-mukta-vaani)', fontSize: '1.1rem' }}>Let's stay in touch!</p>
                     </div>
                 </div>
             </section >
@@ -231,11 +233,11 @@ const Home = () => {
             {/* Publication Section */}
             <section id="publications" style={{ marginBottom: '4rem' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '2rem' }}>
-                    <h2 style={{ margin: 0, transform: 'rotate(-1.5deg)' }}>Recent Publications</h2>
+                    <h2 style={{ margin: 0 }}>Recent Publications</h2>
                     <div style={{ flex: 1, height: '2px', borderBottom: '2px dashed var(--ink-color)', opacity: 0.3 }}></div>
                 </div>
 
-                <div style={{ marginBottom: '2rem', fontFamily: 'var(--font-hand-bold)', fontSize: '1.2rem', display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '0.4rem' }}>
+                <div style={{ marginBottom: '2rem', fontFamily: 'var(--font-mukta-vaani)', fontSize: '1.2rem', display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '0.4rem' }}>
                     For a full list of publications, please see my
                     <a href="https://scholar.google.com/citations?user=RE3GEEsAAAAJ&hl" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', color: 'var(--ink-color)', textDecoration: 'underline' }}>
                         <GoogleScholarDoodle size={20} />
@@ -279,7 +281,7 @@ const Home = () => {
             < section id="projects" style={{ marginBottom: '6rem' }
             }>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '2rem' }}>
-                    <h2 style={{ margin: 0, transform: 'rotate(-1.5deg)' }}>Recent Projects</h2>
+                    <h2 style={{ margin: 0 }}>Recent Projects</h2>
                     <div style={{ flex: 1, height: '2px', borderBottom: '2px dashed var(--ink-color)', opacity: 0.3 }}></div>
                 </div>
                 {/* <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '3rem' }}>
@@ -306,14 +308,14 @@ const Home = () => {
                     ))}
                 </div>
                 <div style={{ textAlign: 'center', marginTop: '3rem' }}>
-                    <Link to="/projects" style={{ fontFamily: 'var(--font-hand-bold)', fontSize: '1.2rem', color: 'var(--ink-color)' }}>See all projects &rarr;</Link>
+                    <Link to="/projects" style={{ fontFamily: 'var(--font-mukta-vaani)', fontSize: '1.2rem', color: 'var(--ink-color)' }}>See all projects &rarr;</Link>
                 </div>
             </section >
 
             {/* Blogs Section */}
             < section id="blogs" style={{ marginBottom: '6rem' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '2rem' }}>
-                    <h2 style={{ margin: 0, transform: 'rotate(-1.5deg)' }}>Recent Blogs</h2>
+                    <h2 style={{ margin: 0 }}>Recent Blogs</h2>
                     <div style={{ flex: 1, height: '2px', borderBottom: '2px dashed var(--ink-color)', opacity: 0.3 }}></div>
                 </div>
 
@@ -332,14 +334,14 @@ const Home = () => {
                         >
                             <Link to={`/blog/${post.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
                                 <span style={{ fontSize: '0.9rem', color: '#888', fontFamily: 'var(--font-body)' }}>{post.date}</span>
-                                <h3 style={{ margin: '0.5rem 0 0 0', fontFamily: 'var(--font-hand-bold)' }}>{post.title}</h3>
+                                <h3 style={{ margin: '0.5rem 0 0 0', fontFamily: 'var(--font-mukta-vaani)' }}>{post.title}</h3>
                                 <div style={{ marginTop: '1rem', color: 'var(--accent-color)', fontSize: '0.9rem' }}>Read more &rarr;</div>
                             </Link>
                         </div>
                     ))}
                 </div>
                 <div style={{ textAlign: 'center', marginTop: '2rem' }}>
-                    <Link to="/blogs" style={{ fontFamily: 'var(--font-hand-bold)', fontSize: '1.2rem', color: 'var(--ink-color)' }}>See all posts &rarr;</Link>
+                    <Link to="/blogs" style={{ fontFamily: 'var(--font-mukta-vaani)', fontSize: '1.2rem', color: 'var(--ink-color)' }}>See all posts &rarr;</Link>
                 </div>
             </section >
         </>

@@ -20,7 +20,7 @@ const Blogs = () => {
                     <article key={post.id} style={{ borderBottom: '1px solid rgba(44, 62, 80, 0.1)', paddingBottom: '2rem' }}>
                         <span style={{ fontFamily: 'var(--font-body)', color: '#888' }}>{post.date}</span>
                         <Link to={`/blog/${post.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
-                            <h2 style={{ fontFamily: 'var(--font-hand-bold)', margin: '0.5rem 0', fontSize: '1.6rem' }}>{post.title}</h2>
+                            <h2 style={{ fontFamily: 'var(--font-mukta-vaani)', margin: '0.5rem 0', fontSize: '1.6rem' }}>{post.title}</h2>
                         </Link>
                         <p style={{ fontFamily: 'var(--font-body)', color: '#444', maxWidth: '800px', fontSize: '1.1rem' }}>{post.excerpt}</p>
                         <Link to={`/blog/${post.id}`} style={{ color: 'var(--accent-color)', fontWeight: 'bold', textDecoration: 'none' }}>Read more &rarr;</Link>

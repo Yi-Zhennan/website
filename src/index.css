@@ -12,7 +12,7 @@
 
   /* Fonts */
   --font-hand: 'Patrick Hand', cursive;
-  --font-hand-bold: 'Kalam', cursive;
+  --font-mukta-vaani: 'Mukta Vaani', sans-serif;
   --font-body: 'Inter', sans-serif;
 
   /* Borders */
@@ -31,7 +31,7 @@ body {
   padding: 0;
   background-color: var(--paper-bg);
   color: var(--ink-color);
-  font-family: var(--font-hand-bold);
+  font-family: var(--font-mukta-vaani);
 
   /* Dot grid pattern */
   background-image: radial-gradient(var(--dot-color) 1px, transparent 1px);
@@ -68,13 +68,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-hand-bold);
+  font-family: var(--font-mukta-vaani);
   font-weight: 700;
   margin-top: 0;
 }
 
 button {
-  font-family: var(--font-hand-bold);
+  font-family: var(--font-mukta-vaani);
   cursor: pointer;
 }
 

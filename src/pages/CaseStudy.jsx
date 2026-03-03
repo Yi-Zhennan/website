@@ -58,7 +58,7 @@ const CaseStudy = () => {
                                         }}
                                     />
                                     {section.caption && (
-                                        <div style={{ textAlign: 'center', marginTop: '1rem', fontFamily: 'var(--font-hand-bold)', fontSize: '1.5rem', color: 'var(--ink-color)' }}>
+                                        <div style={{ textAlign: 'center', marginTop: '1rem', fontFamily: 'var(--font-mukta-vaani)', fontSize: '1.5rem', color: 'var(--ink-color)' }}>
                                             {section.caption}
                                         </div>
                                     )}

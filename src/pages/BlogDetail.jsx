@@ -78,7 +78,7 @@ const BlogDetail = () => {
                                             imageContent
                                         )}
                                         {sec.caption && (
-                                            <div style={{ textAlign: 'center', fontFamily: 'var(--font-hand-bold)', marginTop: '0.5rem', opacity: 0.6 }}>
+                                            <div style={{ textAlign: 'center', fontFamily: 'var(--font-mukta-vaani)', marginTop: '0.5rem', opacity: 0.6 }}>
                                                 {sec.caption}
                                             </div>
                                         )}
@@ -118,7 +118,7 @@ const BlogDetail = () => {
                                                         imgElement
                                                     )}
                                                     {img.caption && (
-                                                        <div style={{ textAlign: 'center', fontFamily: 'var(--font-hand-bold)', marginTop: '0.3rem', fontSize: '0.8rem', opacity: 0.6 }}>
+                                                        <div style={{ textAlign: 'center', fontFamily: 'var(--font-mukta-vaani)', marginTop: '0.3rem', fontSize: '0.8rem', opacity: 0.6 }}>
                                                             {img.caption}
                                                         </div>
                                                     )}
