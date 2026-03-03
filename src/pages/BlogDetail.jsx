@@ -18,7 +18,7 @@ const BlogDetail = () => {
         <div className="blog-detail-page">
             <div style={{ marginBottom: '2rem', fontSize: '1.3rem' }}>
                 <Link to="/blogs" style={{ textDecoration: 'none', color: 'var(--ink-color)', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
-                    <span>&larr;</span> Back to ALl Blogs
+                    <span>&larr;</span> Back to All Blogs
                 </Link>
             </div>
 
