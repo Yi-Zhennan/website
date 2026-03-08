@@ -203,7 +203,7 @@ const Home = () => {
                         <ul style={{ paddingLeft: '1.2rem', fontSize: '1.1rem', lineHeight: 1.6, fontFamily: 'var(--font-mukta-vaani)' }}>
                             <li><strong>[2025-12-02]</strong> One paper has been accepted to HRI.</li>
                             <li> <strong>[2025-06-08]</strong> My first paper in HRI area has been accepted to RO-MAN. </li>
-                            <li> <strong>[2025-05-08]</strong>My first-authored paper (from my undergrad days!) has been accepted to DIS'25! May-8-2025</li>
+                            <li> <strong>[2025-05-08]</strong>My first-authored paper (from my undergrad days!) has been accepted to DIS'25!</li>
                             <li><strong>[2024-04-26]</strong> Our paper won the Best Paper Award at CHI'24. </li>
                         </ul>
                     </StickyNote>
