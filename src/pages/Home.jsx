@@ -154,7 +154,7 @@ const Home = () => {
                         </div>
                     </h2>
                     <p style={{ fontSize: '1.35rem', lineHeight: 1.8, fontFamily: 'var(--font-mukta-vaani)' }}>
-                        Informatics PhD student @IUB <br />
+                        2nd-year Informatics PhD student @IUB <br />
                         B.S. in Psychology @BNU<br />
                         I enjoy route climbing, choreography and crochet.<br />
                         <strong style={{ fontWeight: 600 }}>I design and develop social robots situated within children’s existing social relationships.</strong><br />
