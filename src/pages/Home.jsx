@@ -201,6 +201,7 @@ const Home = () => {
                     <StickyNote color="yellow" rotate={0}>
                         <h3>News</h3>
                         <ul style={{ paddingLeft: '1.2rem', fontSize: '1.1rem', lineHeight: 1.6, fontFamily: 'var(--font-mukta-vaani)' }}>
+                            <li><strong>[2026-03-05]</strong> I attended the CRA-WP workshop at Seattle! I gave a 3-min lightning talk and led a Birds-of-a-Feather session.</li>
                             <li><strong>[2025-12-02]</strong> One paper has been accepted to HRI.</li>
                             <li> <strong>[2025-06-08]</strong> My first paper in HRI area has been accepted to RO-MAN. </li>
                             <li> <strong>[2025-05-08]</strong>My first-authored paper (from my undergrad days!) has been accepted to DIS'25!</li>
