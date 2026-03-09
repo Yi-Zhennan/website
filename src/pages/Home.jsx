@@ -17,6 +17,19 @@ const Home = () => {
     // Get the 3 most recent projects for the home page
     const featuredProjects = projectData.slice(0, 3);
 
+    const newsData = [
+        { date: '2026-03-16', content: ' I will be presenting a paper and a poster at HRI conference in Edinburgh, UK!' },
+        { date: '2026-03-05', content: 'I attended the CRA-WP workshop at Seattle! I gave a 3-min lightning talk and led a Birds-of-a-Feather session.' },
+        { date: '2025-12-02', content: 'One paper has been accepted to HRI.' },
+        { date: '2025-06-08', content: 'My first paper in HRI area has been accepted to RO-MAN.' },
+        { date: '2025-05-08', content: 'My first-authored paper (from my undergrad days!) has been accepted to DIS\'25!' },
+        { date: '2024-04-26', content: 'Our paper won the Best Paper Award at CHI\'24.' }
+    ];
+
+    const [isNewsExpanded, setIsNewsExpanded] = React.useState(false);
+    const INITIAL_NEWS_COUNT = 4;
+    const displayedNews = isNewsExpanded ? newsData : newsData.slice(0, INITIAL_NEWS_COUNT);
+
     const playAudio = (e) => {
         e.stopPropagation();
         if (audioRef.current) {
@@ -200,13 +213,32 @@ const Home = () => {
 
                     <StickyNote color="yellow" rotate={0}>
                         <h3>News</h3>
-                        <ul style={{ paddingLeft: '1.2rem', fontSize: '1.1rem', lineHeight: 1.6, fontFamily: 'var(--font-mukta-vaani)' }}>
-                            <li><strong>[2026-03-05]</strong> I attended the CRA-WP workshop at Seattle! I gave a 3-min lightning talk and led a Birds-of-a-Feather session.</li>
-                            <li><strong>[2025-12-02]</strong> One paper has been accepted to HRI.</li>
-                            <li> <strong>[2025-06-08]</strong> My first paper in HRI area has been accepted to RO-MAN. </li>
-                            <li> <strong>[2025-05-08]</strong>My first-authored paper (from my undergrad days!) has been accepted to DIS'25!</li>
-                            <li><strong>[2024-04-26]</strong> Our paper won the Best Paper Award at CHI'24. </li>
+                        <ul style={{ paddingLeft: '1.2rem', fontSize: '1.1rem', lineHeight: 1.6, fontFamily: 'var(--font-mukta-vaani)', marginBottom: '1rem' }}>
+                            {displayedNews.map((news, index) => (
+                                <li key={index}><strong>[{news.date}]</strong> {news.content}</li>
+                            ))}
                         </ul>
+                        {newsData.length > INITIAL_NEWS_COUNT && (
+                            <button
+                                onClick={() => setIsNewsExpanded(!isNewsExpanded)}
+                                style={{
+                                    background: 'none',
+                                    border: 'none',
+                                    fontFamily: 'var(--font-mukta-vaani)',
+                                    fontSize: '0.9rem',
+                                    color: 'var(--ink-color)',
+                                    cursor: 'pointer',
+                                    textDecoration: 'underline',
+                                    padding: 0,
+                                    opacity: 0.7,
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    gap: '4px'
+                                }}
+                            >
+                                {isNewsExpanded ? 'Show Less ↑' : 'Show More ↓'}
+                            </button>
+                        )}
                     </StickyNote>
 
                     <div style={{ textAlign: 'center', padding: '1rem' }}>
