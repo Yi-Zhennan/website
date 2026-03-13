@@ -24,7 +24,8 @@ const Layout = () => {
     const navLinks = [
         { name: 'About', path: '/' },
         { name: 'Projects', path: '/projects' },
-        { name: 'Blogs', path: '/blogs' }
+        { name: 'Blogs', path: '/blogs' },
+        { name: 'CV', path: 'https://drive.google.com/file/d/1ZAuOBJr9k9DRK2QxqV-7jWPGZ-1peZSo/view?usp=sharing', external: true }
     ];
 
     return (
@@ -51,13 +52,23 @@ const Layout = () => {
                 </Link>
                 <div className="nav-links" style={{ display: 'flex', gap: '1.5rem' }}>
                     {navLinks.map((item, i) => {
+                        const linkStyle = {
+                            textDecoration: 'none',
+                            color: 'var(--ink-color)',
+                            fontSize: '1.2rem',
+                            borderBottom: 'none'
+                        };
+
+                        if (item.external) {
+                            return (
+                                <a key={item.name} href={item.path} target="_blank" rel="noopener noreferrer" style={linkStyle}>
+                                    {item.name}
+                                </a>
+                            );
+                        }
+
                         return (
-                            <Link key={item.name} to={item.path} style={{
-                                textDecoration: 'none',
-                                color: 'var(--ink-color)',
-                                fontSize: '1.2rem',
-                                borderBottom: 'none'
-                            }}>
+                            <Link key={item.name} to={item.path} style={linkStyle}>
                                 {item.name}
                             </Link>
                         );

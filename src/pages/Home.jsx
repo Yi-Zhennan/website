@@ -238,19 +238,21 @@ const Home = () => {
                         <h3 style={{ marginBottom: '1.5rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
                             <Star /> Contact <Star />
                         </h3>
-                        <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center' }}>
-                            <a href="mailto:yizh@iu.edu" style={{ color: 'var(--ink-color)', transition: 'transform 0.2s', display: 'inline-block' }} aria-label="Email">
-                                <EmailDoodle size={40} />
-                            </a>
-                            <a href="https://www.linkedin.com/in/zhennan-yi" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--ink-color)', transition: 'transform 0.2s', display: 'inline-block' }} aria-label="LinkedIn">
-                                <LinkedInDoodle size={40} />
-                            </a>
-                            <a href="https://scholar.google.com/citations?user=RE3GEEsAAAAJ&hl" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--ink-color)', transition: 'transform 0.2s', display: 'inline-block' }} aria-label="Google Scholar">
-                                <GoogleScholarDoodle size={40} />
-                            </a>
-                            <a href="https://x.com/nan08879" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--ink-color)', transition: 'transform 0.2s', display: 'inline-block' }} aria-label="X (Twitter)">
-                                <XDoodle size={40} />
-                            </a>
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', alignItems: 'center' }}>
+                            <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center' }}>
+                                <a href="mailto:yizh@iu.edu" style={{ color: 'var(--ink-color)', transition: 'transform 0.2s', display: 'inline-block' }} aria-label="Email">
+                                    <EmailDoodle size={40} />
+                                </a>
+                                <a href="https://www.linkedin.com/in/zhennan-yi" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--ink-color)', transition: 'transform 0.2s', display: 'inline-block' }} aria-label="LinkedIn">
+                                    <LinkedInDoodle size={40} />
+                                </a>
+                                <a href="https://scholar.google.com/citations?user=RE3GEEsAAAAJ&hl" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--ink-color)', transition: 'transform 0.2s', display: 'inline-block' }} aria-label="Google Scholar">
+                                    <GoogleScholarDoodle size={40} />
+                                </a>
+                                <a href="https://x.com/nan08879" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--ink-color)', transition: 'transform 0.2s', display: 'inline-block' }} aria-label="X (Twitter)">
+                                    <XDoodle size={40} />
+                                </a>
+                            </div>
                         </div>
                         <p style={{ marginTop: '1rem', fontFamily: 'var(--font-mukta-vaani)', fontSize: '1.1rem' }}>Let's stay in touch!</p>
                     </div>
