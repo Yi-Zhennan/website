@@ -47,7 +47,8 @@ const Layout = () => {
                 transition: 'all 0.3s ease',
                 margin: '0 -2rem'
             }}>
-                <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+                <Link to="/" style={{ textDecoration: 'none', color: 'inherit', display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
+                    <img src="/favicon.png" alt="Logo" style={{ height: '2.5rem', width: 'auto' }} />
                     <h1 className="nav-brand" style={{ fontSize: '2rem', margin: 0 }}>Yi, Zhennan</h1>
                 </Link>
                 <div className="nav-links" style={{ display: 'flex', gap: '1.5rem' }}>
