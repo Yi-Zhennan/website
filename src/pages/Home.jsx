@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import blogData from '../data/blogs.json';
 import projectData from '../data/projects.json';
 import publicationData from '../data/publications.json';
+import newsData from '../data/news.json';
 
 const Home = () => {
     const audioRef = React.useRef(null);
@@ -17,14 +18,6 @@ const Home = () => {
     // Get the 3 most recent projects for the home page
     const featuredProjects = projectData.slice(0, 3);
 
-    const newsData = [
-        { date: '2026-03-16', content: ' I will be presenting a paper and a poster at HRI conference in Edinburgh, UK!' },
-        { date: '2026-03-05', content: 'I attended the CRA-WP workshop at Seattle! I gave a 3-min lightning talk and led a Birds-of-a-Feather session.' },
-        { date: '2025-12-02', content: 'One paper has been accepted to HRI.' },
-        { date: '2025-06-08', content: 'My first paper in HRI area has been accepted to RO-MAN.' },
-        { date: '2025-05-08', content: 'My first-authored paper (from my undergrad days!) has been accepted to DIS\'25!' },
-        { date: '2024-04-26', content: 'Our paper won the Best Paper Award at CHI\'24.' }
-    ];
 
     const [isNewsExpanded, setIsNewsExpanded] = React.useState(false);
     const INITIAL_NEWS_COUNT = 4;
