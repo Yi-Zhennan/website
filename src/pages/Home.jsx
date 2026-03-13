@@ -163,7 +163,7 @@ const Home = () => {
                         2nd-year Informatics PhD student @IUB <br />
                         B.S. in Psychology @BNU<br />
                         I enjoy route climbing, choreography and crochet.<br />
-                        <strong style={{ fontWeight: 600 }}>I design and develop social robots situated within children’s existing social relationships.</strong><br />
+                        <strong style={{ fontWeight: 600 }}>I design and develop social robots that help children learn, create, and connect.</strong><br />
                     </p>
                 </div>
 
@@ -193,12 +193,12 @@ const Home = () => {
                 }}>
                     <div style={{ fontSize: '1.1rem', lineHeight: 1.6, fontFamily: 'var(--font-mukta-vaani)' }}>
                         <h3>Research Summary</h3>
-                        <p>Situated at the intersection of artificial intelligence, robotics, and psychology, my research investigates
-                            <strong> the design of social robots for children in educational and family contexts</strong>, focusing on how robot
-                            interactions support social emotional development, creativity, and shared meaning-making.
-                            I adopt <strong>research-through-design</strong> and <strong>participatory approaches</strong>, creating and studying interactive artifacts to
-                            explore how robots can be meaningfully integrated into everyday social settings for children
-                            and those involved in child development.</p>
+                        <p>My research sits at the intersection of artificial intelligence, robotics, and psychology.
+                            I design and study <strong>social robots for children in educational and family contexts</strong>,
+                            exploring how robot interactions can support social-emotional development, creativity, and shared meaning-making.
+                            Through <strong>research-through-design</strong> and <strong>participatory</strong> methods,
+                            I develop interactive artifacts to understand <strong>how robots can be meaningfully integrated
+                                into everyday social environments for children and those involved in child development</strong>.</p>
                         In addition, I'm interested in designing technologies for older adults, especially those who live with dementia.
                         <p><strong>Keywords</strong>: Child-Robot Interaction, Group HRI, Social Emotional Development, Research-through-Design, Participatory Design</p>
 
