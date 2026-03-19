@@ -1,5 +1,41 @@
 [
     {
+        "id": 6,
+        "title": "Rethinking Pedagogical Relationships in the Presence of Social Robots",
+        "authors": [
+            {
+                "name": "Zhennan Yi",
+                "isMe": true
+            },
+            {
+                "name": "Lingyun Chen, Paulina Maria Zguda, Randy Gomez, Selma Šabanović.",
+                "isMe": false
+            }
+        ],
+        "conference": "DIS 2026 (Accepted)",
+        "year": 2026
+    },
+    {
+        "id": 5,
+        "title": "Situated Use and Negotiated Effectiveness: Critical Considerations of GenAI-Powered Reminiscence Intervention for People with Dementia.",
+        "authors": [
+            {
+                "name": "Yuling Sun",
+                "isMe": false
+            },
+            {
+                "name": "Zhennan Yi",
+                "isMe": true
+            },
+            {
+                "name": "Junyan Mao, Minglong Tang, Xiaojuan Ma, Ruiqi Chen, Zhifan Guo, Xin Tong, Ning Gu.",
+                "isMe": false
+            }
+        ],
+        "conference": "CSCW 2026 (Accepted)",
+        "year": 2026
+    },
+    {
         "id": 1,
         "title": "Adding More Value Than Work: Practical Guidelines for Integrating Robots into Intercultural Competence Learning.",
         "authors": [
@@ -12,7 +48,7 @@
                 "isMe": false
             }
         ],
-        "conference": "HRI ’26",
+        "conference": "HRI 2026",
         "year": 2026,
         "links": [
             {
@@ -34,7 +70,7 @@
                 "isMe": false
             }
         ],
-        "conference": "DIS ’25",
+        "conference": "DIS 2025",
         "year": 2025,
         "links": [
             {
@@ -56,7 +92,7 @@
                 "isMe": false
             }
         ],
-        "conference": "RO-MAN ’25",
+        "conference": "RO-MAN 2025",
         "year": 2025,
         "links": [
             {
@@ -82,7 +118,7 @@
                 "isMe": false
             }
         ],
-        "conference": "CHI ’24 🏆 ",
+        "conference": "CHI 2024 🏆 ",
         "year": 2024,
         "links": [
             {
