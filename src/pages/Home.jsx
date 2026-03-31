@@ -4,7 +4,6 @@ import StickyNote from '../components/StickyNote';
 import { Arrow, Star, EmailDoodle, LinkedInDoodle, GoogleScholarDoodle, XDoodle, AudioDoodle, UnderlineDoodle, ConnectorDoodle, ClimbingDoodle, DanceDoodle, CrochetDoodle } from '../components/Doodles';
 import { Link } from 'react-router-dom';
 import blogData from '../data/blogs.json';
-import projectData from '../data/projects.json';
 import publicationData from '../data/publications.json';
 import newsData from '../data/news.json';
 
@@ -14,9 +13,6 @@ const Home = () => {
 
     // Get the 3 most recent posts
     const recentPosts = blogData.slice(0, 3);
-
-    // Get the 3 most recent projects for the home page
-    const featuredProjects = projectData.slice(0, 3);
 
 
     const [isNewsExpanded, setIsNewsExpanded] = React.useState(false);
@@ -305,41 +301,6 @@ const Home = () => {
                     ))}
                 </div>
             </section>
-
-            {/* Projects Section */}
-            < section id="projects" style={{ marginBottom: '6rem' }
-            }>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '2rem' }}>
-                    <h2 style={{ margin: 0 }}>Recent Projects</h2>
-                    <div style={{ flex: 1, height: '2px', borderBottom: '2px dashed var(--ink-color)', opacity: 0.3 }}></div>
-                </div>
-                {/* <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '3rem' }}>
-                    <h2 style={{ borderBottom: '3px solid var(--ink-color)', paddingBottom: '0.5rem', transform: 'rotate(-1deg)' }}>Projects</h2>
-                </div> */}
-
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2.5rem' }}>
-                    {featuredProjects.map((project, index) => (
-                        <HandDrawnCard key={project.id} title={project.title} rotate={index % 2 === 0 ? 1 : -1}>
-                            <div style={{ width: '100%', height: '180px', backgroundColor: '#eee', marginBottom: '1rem', borderRadius: '4px', border: '1px solid #ccc', overflow: 'hidden' }}>
-                                {project.thumbnail ? (
-                                    <img src={project.thumbnail} alt={project.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                                ) : (
-                                    <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#888' }}>Image Placeholder</div>
-                                )}
-                            </div>
-                            <p>
-                                {project.description}
-                            </p>
-                            <div style={{ marginTop: 'auto', paddingTop: '1rem' }}>
-                                <Link to={`/case-study/${project.id}`} style={{ color: 'var(--accent-color)', fontWeight: 'bold' }}>View Details &rarr;</Link>
-                            </div>
-                        </HandDrawnCard>
-                    ))}
-                </div>
-                <div style={{ textAlign: 'center', marginTop: '3rem' }}>
-                    <Link to="/projects" style={{ fontFamily: 'var(--font-mukta-vaani)', fontSize: '1.2rem', color: 'var(--ink-color)' }}>See all projects &rarr;</Link>
-                </div>
-            </section >
 
             {/* Blogs Section */}
             < section id="blogs" style={{ marginBottom: '6rem' }}>

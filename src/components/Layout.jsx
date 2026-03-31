@@ -23,7 +23,6 @@ const Layout = () => {
 
     const navLinks = [
         { name: 'About', path: '/' },
-        { name: 'Projects', path: '/projects' },
         { name: 'Blogs', path: '/blogs' },
         { name: 'CV', path: 'https://drive.google.com/file/d/1ZAuOBJr9k9DRK2QxqV-7jWPGZ-1peZSo/view?usp=sharing', external: true }
     ];
