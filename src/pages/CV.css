@@ -30,7 +30,7 @@
 .pdf-iframe {
     border: none;
     position: absolute;
-    top: -10px;
+    top: -48px;
     left: 0;
     width: 100%;
     height: calc(100% + 108px);
@@ -58,9 +58,11 @@
     }
 
     .pdf-iframe {
-        /* Some mobile browsers might need different offsets or the toolbars might behave differently */
-        /* But we start with the same and adjust if needed */
-        top: -10px;
-        height: calc(100% + 108px);
+        width: 140%;
+        height: 155%;
+        transform: scale(0.714);
+        transform-origin: 0 0;
+        top: -68px; /* Approximately -48px visually after 0.714 scaling */
+        left: 0;
     }
 }
