@@ -24,6 +24,7 @@
     box-shadow: 15px 15px 0px rgba(0, 0, 0, 0.05);
     position: relative;
     margin-bottom: 4rem;
+    margin-top: 1rem;
 }
 
 .pdf-iframe {
