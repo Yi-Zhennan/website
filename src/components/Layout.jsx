@@ -2,6 +2,7 @@ import React from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import VisitorCounter from './VisitorCounter';
 
+
 const Layout = () => {
     const location = useLocation();
 
@@ -24,7 +25,7 @@ const Layout = () => {
     const navLinks = [
         { name: 'About', path: '/' },
         { name: 'Blogs', path: '/blogs' },
-        { name: 'CV', path: 'https://drive.google.com/file/d/1ZAuOBJr9k9DRK2QxqV-7jWPGZ-1peZSo/view?usp=sharing', external: true }
+        { name: 'CV', path: '/cv', external: false }
     ];
 
     return (

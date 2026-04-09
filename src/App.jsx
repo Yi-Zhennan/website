@@ -6,6 +6,7 @@ import CaseStudy from './pages/CaseStudy';
 import BlogDetail from './pages/BlogDetail';
 import Blogs from './pages/Blogs';
 import Projects from './pages/Projects';
+import CV from './pages/CV';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="blog/:id" element={<BlogDetail />} />
           <Route path="blogs" element={<Blogs />} />
           <Route path="projects" element={<Projects />} />
+          <Route path="cv" element={<CV />} />
         </Route>
       </Routes>
     </BrowserRouter>
