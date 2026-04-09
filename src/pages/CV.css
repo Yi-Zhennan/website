@@ -58,9 +58,12 @@
     }
 
     .pdf-iframe {
-        /* Some mobile browsers might need different offsets or the toolbars might behave differently */
-        /* But we start with the same and adjust if needed */
-        top: -10px;
-        height: calc(100% + 108px);
+        /* Scale trick: Make the iframe wider than the screen, then scale it down. */
+        /* This forces the PDF viewer to zoom out and fit more content horizontally. */
+        width: 135%;
+        height: calc(135% + 145px); /* Proportionally scale the height padding */
+        transform: scale(0.74); /* 1 / 1.35 = 0.74 */
+        transform-origin: 0 0; /* Scale from top left so it stays anchored */
+        top: -13.5px; /* -10px / 0.74 = -13.5px (maintain visual top crop) */
     }
 }
