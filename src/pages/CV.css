@@ -55,15 +55,15 @@
         min-height: 600px;
         box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.05);
         margin-bottom: 2rem;
+        /* Critical fix for iOS Safari to allow scrolling of full-content height PDFs */
+        overflow-y: auto !important;
+        -webkit-overflow-scrolling: touch;
     }
 
     .pdf-iframe {
-        /* Scale trick: Make the iframe wider than the screen, then scale it down. */
-        /* This forces the PDF viewer to zoom out and fit more content horizontally. */
-        width: 135%;
-        height: calc(135% + 145px); /* Proportionally scale the height padding */
-        transform: scale(0.74); /* 1 / 1.35 = 0.74 */
-        transform-origin: 0 0; /* Scale from top left so it stays anchored */
-        top: -13.5px; /* -10px / 0.74 = -13.5px (maintain visual top crop) */
+        /* Reverted the CSS scale trick because it corrupts touch/scroll events on mobile browsers. */
+        top: -10px;
+        width: 100%;
+        height: calc(100% + 108px);
     }
 }
