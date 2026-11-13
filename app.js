@@ -260,7 +260,7 @@ function post(id) {
 const CV = {
   education: [
     { what: "Indiana University Bloomington", where: "Bloomington, IN, USA", items: [
-      ["PhD in Informatics (Intelligent & Interactive Systems), advised by Dr. Selma Šabanović", "Expected 2029"],
+      ["PhD in Informatics (Intelligent & Interactive Systems)", "Expected 2029"],
       ["M.S. in Informatics", "2026"],
     ] },
     { what: "Beijing Normal University", where: "Beijing, China", items: [["B.S. in Psychology", "2024"]] },
