@@ -234,7 +234,9 @@ h1.hand { font-family: var(--hand); font-size: 36px; font-weight: 700; line-heig
   .say-card { left: 0; right: 0; width: auto; top: calc(100% + 12px); }
   .ledge { height: 95px; margin-top: 8px; }
   .kitty { width: 112px; bottom: -40px; }
-  .meow { font-size: 16px; white-space: normal; width: 170px; text-align: right; line-height: 1.25; top: 10px; }
+  .meow { font-size: 16px; white-space: normal; width: 170px; text-align: right; line-height: 1.25; top: 10px; transition: opacity .5s ease .25s, transform .5s ease .25s; }
+  /* on phones there's no hover: the cat "says" its line once it scrolls into view */
+  .kitty.said .meow { opacity: 1; transform: none; }
   .nav { grid-column: 1 / -1; flex-direction: row; flex-wrap: wrap; gap: 4px 14px; margin-top: 18px; }
   .nav { gap: 4px 11px; }
   .nav a { font-size: 17px; letter-spacing: 0.2px; position: relative; }

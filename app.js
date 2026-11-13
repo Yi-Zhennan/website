@@ -371,5 +371,24 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") document.querySelector(".say-wrap")?.classList.remove("open");
 });
 
-window.addEventListener("hashchange", () => { route(); window.scrollTo(0, 0); });
+// Cat speech on phones: show the line while the cat is on screen,
+// and replay it when the page (and so the line) changes.
+const kitty = document.querySelector(".kitty");
+let kittyOnScreen = false;
+function checkKitty() {
+  if (!kitty) return;
+  const r = kitty.getBoundingClientRect();
+  const on = r.top < innerHeight * 0.9 && r.bottom > r.height * 0.4;
+  if (on !== kittyOnScreen) { kittyOnScreen = on; kitty.classList.toggle("said", on); }
+}
+addEventListener("scroll", checkKitty, { passive: true });
+addEventListener("resize", checkKitty);
+setTimeout(checkKitty, 300);
+function replayMeow() {
+  if (!kitty) return;
+  kitty.classList.remove("said");
+  if (kittyOnScreen) setTimeout(() => kitty.classList.add("said"), 120);
+}
+
+window.addEventListener("hashchange", () => { route(); window.scrollTo(0, 0); replayMeow(); });
 route();
