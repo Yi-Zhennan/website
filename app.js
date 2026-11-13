@@ -270,8 +270,7 @@ const CV = {
   honors: [
     ["CRA-WP Graduate Cohort", "Computing Research Association", "2026"],
     ["Special Recognition for Outstanding Reviews", "HRI 2026, C&C 2026", "2026"],
-    ["Top Cited Article in Developmental Science", "Wiley", "2025"],
-    ["Top Cited Article in Child Development", "Wiley", "2025"],
+    ["Top Cited Article in Developmental Science and Child Development", "Wiley", "2025"],
     ["Summer Fellowship ($10,000)", "Indiana University Bloomington", "2024"],
     ["Best Paper Award", "CHI 2024", "2024"],
     ["Best Design Award", "6th Global Competition on Design for Future Education", "2023"],
