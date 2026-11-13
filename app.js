@@ -283,7 +283,7 @@ const CV = {
   ],
   service: [
     ["Associate Chair", "DIS 2026 PWiP Track"],
-    ["Reviewer", "CHI 2026, HRI 2026, DIS 2026, C&C 2026"],
+    ["Reviewer", "CHI 2026 & 2027, HRI 2026 & 2027, DIS 2026, C&C 2026"],
     ["Volunteer", "DIS 2025"],
     ["Instructor", "Designed and led a robotics workshop for girls (grades 6–12) — designing, building, and programming robots to spark STEM interest. 2025 Robotics Program by Girl Scouts and WonderLab."],
   ],
