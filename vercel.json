@@ -1,8 +1,13 @@
 {
-    "rewrites": [
-        {
-            "source": "/(.*)",
-            "destination": "/index.html"
-        }
-    ]
+  "framework": null,
+  "installCommand": "",
+  "buildCommand": "node build.mjs",
+  "outputDirectory": "dist",
+  "redirects": [
+    { "source": "/cv", "destination": "/#/cv", "permanent": true },
+    { "source": "/blogs", "destination": "/", "permanent": true },
+    { "source": "/blog/:id", "destination": "/", "permanent": true },
+    { "source": "/projects", "destination": "/#/research", "permanent": true },
+    { "source": "/project/:id", "destination": "/#/research", "permanent": true }
+  ]
 }

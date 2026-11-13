@@ -1,21 +1,32 @@
 <!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/png" href="/favicon.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zhennan Yi</title>
+  <meta name="description" content="Zhennan Yi — Informatics PhD student at Indiana University Bloomington, designing social robots that help children learn, create, and connect.">
+  <link rel="icon" href="assets/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Inter:wght@400;500;600&family=Kalam:wght@300;400;700&family=Mukta+Vaani:wght@400;500;600;700;800&family=Patrick+Hand&display=swap"
-    rel="stylesheet">
-  <title>Zhennan Yi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
-</body>
+  <div class="page">
+    <aside class="side">
+      <a class="avatar" href="#/" aria-label="Home"><img src="assets/portrait.png" alt="Line drawing of Zhennan holding a cat"></a>
+      <a class="logo" href="#/">Zhennan Yi</a>
+      <nav class="nav" id="nav"></nav>
+    </aside>
 
+    <div class="ledge" aria-hidden="true"><span class="kitty"><img src="assets/cat/lean.webp" alt=""><span class="meow">meow~ hi there!</span></span></div>
+
+    <main class="main" id="main"></main>
+
+
+    <footer class="foot"><span id="year"></span></footer>
+  </div>
+  <audio id="say" src="assets/zhennan.mp3" preload="none"></audio>
+  <script src="app.js"></script>
+</body>
 </html>
